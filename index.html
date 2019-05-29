@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agro Harvest</title>
+
+	<!-- Required meta tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap css-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!--jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <!--FontAwesomeIcons-->
+  <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!--Google Fonts-->
+ <link href='https://fonts.googleapis.com/css?family=Tauri' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Vollkorn SC' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Marko One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+
+<style>
+  body{
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+  }
+.navbar-toggle{
+  border:1px solid yellow;
+  margin-right: 20px;
+  margin-top: 20px;
+
+  
+}
+
+.nav{
+  padding-left: 45%;
+}
+.navbar{
+  background-color:transparent; ;
+  border:none;
+
+}
+.navbar-brand{
+   font-size: 30px;
+   font-family:Varela;
+   padding-top: 15px;
+   padding-left: 20px;
+
+}
+.fa-leaf{
+  font-size: 35px;
+  padding-right: 10px;
+  color: yellow;
+}
+.navcontent{
+  font-family: Athiti;
+  font-size: 20px;
+
+}
+.navcontent:hover{
+  background-color: #00BFFF;
+}
+
+
+.slidersec{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("slide.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  height: 800px;
+  
+}
+.carousel-inner{
+  margin-top: 200px;
+  height: 600px;
+}
+.item{
+  text-align: center;
+}
+.slidehead{
+  font-size: 50px;
+  font-family:Vollkorn SC;
+
+
+}
+.slidesen{
+  font-size: 32px;
+  font-family: Athiti;
+  word-spacing: 3px;
+  opacity: .7;
+  padding-top: 20px;
+}
+.slidepara{
+  font-size: 24px;
+  font-family: Athiti;
+  word-spacing: 2px;
+  padding-top: 20px;
+}
+.slidebtn{
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border:2px solid #fff;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: Athiti;
+  text-transform: uppercase;
+  background-color: transparent;
+
+}
+.slidebtn:hover{
+  color: #fff;
+  background-color:#00008b;
+  opacity: .6; 
+}
+.fa-spinner{
+  margin-right: 10px;
+}
+
+.bestsec{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.besthead{
+  text-align: center;
+  font-size: 50px;
+  font-family: Actor;
+  color: #000;
+
+}
+.bestpara{
+  text-align: center;
+  font-family: Athiti;
+  font-size: 24px;
+  padding-top: 25px;
+  color: #000;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.fa-envira{
+  font-size: 20px;
+  border:1px solid #fff;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: darkgreen;
+  color: #fff;
+  margin-left: 125px;
+
+
+}
+.fa-apple{
+ font-size: 20px;
+  border:1px solid #fff;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: darkgreen;
+  color: #fff;
+  margin-left: 125px;
+ 
+}
+.fa-pagelines{
+  font-size: 20px;
+  border:1px solid #fff;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: darkgreen;
+  color: #fff;
+  margin-left: 125px;
+
+ 
+}
+.besttitle{
+  font-family: Allerta;
+  font-size: 30px;
+  padding-top: 10px;
+  word-spacing: 2px;
+  text-align: center;
+  color: #000;
+}
+.bestsen{
+  font-family: Athiti;
+  font-size: 22px;
+  word-spacing: 2px;
+  text-align: center;
+  color: #000;
+}
+.lead{
+  margin-top: 50px;
+}
+.whys{
+  background-color: #800000;
+  padding-bottom: 50px;
+  } 
+
+.whyhead{
+  text-align: center;
+  font-family: Allerta;
+  font-size: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.whytitle{
+  font-family: Athiti;
+  font-size: 30px;
+  word-spacing: 2px;
+  color: #fff;
+  padding-top: 10px;
+}
+.whypara{
+  font-family: Athiti;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #fff;
+
+  
+}
+.icon{
+  font-size: 50px;
+  color: yellow;
+  margin-left: 20px;
+
+}
+.coresec{
+  padding-bottom: 50px;
+}
+.corehead{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 50px;
+  font-family: Actor;
+  color: #000;
+
+}
+.coresen{
+  font-size: 25px;
+  color: #000;
+  font-family: Baloo;
+  word-spacing: 2px;
+  padding-top: 10px;
+
+}
+.corepara{
+  font-family: Athiti;
+  font-size: 20px;
+  word-spacing: 2px;
+  padding-top: 30px;
+}
+.corebtn{
+  color: #000;
+  background-color: #fff;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #00008b;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-family: Baloo;
+  word-spacing: 3px;
+  margin-bottom: 20px;
+}
+.corebtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.cleansec{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("img.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+
+}
+.cleantitle{
+  font-family: Actor;
+  font-size: 30px;
+  line-height: 40px;
+  word-spacing: 3px;
+  padding-bottom: 30px;
+
+}
+.cleanpara{
+  font-family: Athiti;
+  font-size: 20px;
+  line-height: 28px;
+  word-spacing: 2px;
+  padding-bottom: 30px;
+  opacity: .8;
+}
+.cleanhead{
+  font-family: Athiti;
+  font-size: 24px;
+  line-height: 30px;
+
+}
+.fa-tree{
+  padding-right: 10px;
+}
+.oursec{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.ourhead{
+  font-family: Amaranth;
+  font-size: 30px;
+  word-spacing: 1px;
+  color: #000;
+  padding-top: 10px;
+  text-align: center;
+}
+.ourpara{
+  font-size: 20px;
+  color: #000;
+  line-height: 30px;
+  font-family: Athiti;
+  word-spacing: 2px;
+  padding-top: 10px;
+  text-align: center;
+
+}
+.ourbtn{
+  color: #000;
+  background-color: #fff;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #00008b;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Baloo;
+  word-spacing: 3px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+.ourbtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.plantsec{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("ox.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  text-align: center;
+
+}
+.planthead{
+  font-family: Athiti;
+  font-size: 40px;
+  word-spacing: 2px;
+}
+.plantpara{
+  font-family: Athiti;
+  font-size: 20px;
+  word-spacing: 2px;
+  padding-top: 20px;
+}
+
+.plantbtn1{
+  color: #000;
+  background-color: yellow;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #00008b;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Baloo;
+  word-spacing: 3px;
+  margin-right: 10px;
+}
+.plantbtn1:hover{
+  color: #fff;
+  background-color: #8b0000;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+.plantbtn2{
+  color: #000;
+  background-color: skyblue;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border:1px solid #00008b;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: Baloo;
+  word-spacing: 3px;
+  margin-left: 10px;
+}
+.plantbtn2:hover{
+  color: #fff;
+  background-color: #00008b;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 325px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.cardtitle {
+  color: #fff;
+  font-size: 18px;
+}
+
+.teambtn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.ak{
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  padding:5px;
+}
+
+.teambtn:hover, .ak:hover {
+  opacity: 0.7;
+}
+.teamsec{
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.teamhead{
+  color: #fff;
+  font-family: Baloo;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  word-spacing: 2px;
+}
+.parallax {
+  /* The image used */
+  background-image: url("farm.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.teamtitle,.teamdes{
+  color: #fff;
+}
+.teamname{
+  color: #fff;
+  font-family: Baloo;
+  font-size: 30px;
+}
+.ourtitle{
+  color: #000;
+  font-family: Baloo;
+  font-size: 40px;
+  word-spacing: 2px;
+  padding-bottom: 50px;
+  padding-top: 5px;
+  text-align: center;
+
+}
+.contactsec{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("contact.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  
+}
+.cont{
+  text-align: center;
+  font-family: Athiti;padding-bottom: 20px;
+  
+}
+
+.con{
+  font-size: 30px;
+
+}
+.con1{
+  font-size: 20px;
+}
+.contitle{
+  font-family: Athiti;
+  font-size: 30px;
+
+}
+.sen{
+  font-family: Athiti;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #ddd;
+  padding: 20px;
+  margin-top: 50px;
+}
+.theend{
+background-color: #000;
+opacity: .9;
+  color: #fff !important;
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+<!--navigation menu-->
+
+<section id="navbar">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      
+        </button>
+
+
+      <a class="navbar-brand" href="#" style="color:#fff;"><i class="fa fa-leaf" aria-hidden="true"></i>Agro Harvest</a>
+    </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="navcontent"><a href="#slider" style="color: #fff;">Home</a></li>
+            <li class="navcontent"><a href="#why" style="color: #fff;">About Us</a></li>
+            <li class="navcontent"><a href="#best" style="color: #fff;">Services</a></li>
+            <li class="navcontent"><a href="#team" style="color: #fff;">Our Team</a></li>
+            <li class="navcontent"><a href="#core" style="color: #fff;">Gallery</a></li>
+            <li class="navcontent"><a href="#contact" style="color: #fff;">Contact</a></li>    
+          </ul>
+       </div>     
+  </div>
+</nav>
+</section>
+<!--navigation menu end-->
+
+<!--Slider Section-->
+
+<section id="slider">
+
+  <div class="slidersec container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        
+          <h1 class="slidehead">HARVESTING</h1>
+          <h3 class="slidesen">Cultivating New Crops To Make Farmers Increase Profits</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+
+      </div>
+
+      <div class="item">
+        
+          <h1 class="slidehead">FARMING</h1>
+          <h3 class="slidesen">Cultivating New Crops To Make Farmers Increase Profits</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+          
+      </div>
+    
+      <div class="item">
+        
+        <h1 class="slidehead">CULTIVATING</h1>
+          <h3 class="slidesen">Cultivating New Crops To Make Farmers Increase Profits</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+          
+      </div>
+
+      <div class="item">
+      
+        <h1 class="slidehead">HARVESTING</h1>
+          <h3 class="slidesen">Cultivating New Crops To Make Farmers Increase Profits</h3>
+          <p class="slidepara">Ut enim ad minim quis nostrud exerci sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua nostrud exerci sed.</p>
+          <button class="slidebtn"><i class="fa fa-spinner fa-spin"></i>Read More</button>
+          
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+
+     </div>
+</div>
+</section>
+
+<!--Best Section-->
+
+<section id="best">
+  <div class=" bestsec container">
+    <div class="row">
+
+      <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12">
+        <h1 class="besthead">Best Harvesting Agriculture Company</h1>
+        <p class="bestpara">Tempor Ut enim ad minim quis nostrud exerci sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud exerci sed nostrud exerci ipsum dolor ut.</p>
+      </div>
+
+      <div class="lead col-lg-4">
+        <i class="fa fa-envira" aria-hidden="true"></i>
+        <h2 class="besttitle">CEREALS</h2>
+        <p class="bestsen">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet quam.</p>
+        
+      </div>
+
+      <div class="lead col-lg-4">
+        <i class="fa fa-apple" aria-hidden="true"></i>
+        <h2 class="besttitle">FRUITS & BERRIES</h2>
+        <p class="bestsen">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet quam.</p>
+        
+      </div>
+      
+      <div class="lead col-lg-4">
+        <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <h2 class="besttitle">VEGETABLES</h2>
+        <p class="bestsen">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet quam.</p>
+        
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<!--Why choose Us Section-->
+
+<section id="why">
+  <div class="whys container-fluid">
+
+  <div class="whysec container">
+    <div class="row">
+
+    <div class="col-12">
+      <h1 class="whyhead">Why Choose Us</h1>
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        <h1 class="icon"><span class="glyphicon glyphicon-apple"></span></h1>
+        <h2 class="whytitle">GRAINS</h2>
+        <p class="whypara">quis nostrum ullamet corporis suscipit.</p>
+        
+    </div>
+    
+    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        <h1 class="icon"><span class="glyphicon glyphicon-signal"></span></h1>
+        <h2 class="whytitle">SEED TRAITS</h2>
+        <p class="whypara">quis nostrum ullamet corporis suscipit.</p>
+        
+    </div>
+
+    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        <h1 class="icon"><span class="glyphicon glyphicon-grain"></span></h1>
+        <h2 class="whytitle">CULTIVATION</h2>
+        <p class="whypara">quis nostrum ullamet corporis suscipit.</p>
+        
+    </div>
+    
+
+    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        <h1 class="icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></h1>
+        <h2 class="whytitle">SAFETY</h2>
+        <p class="whypara">quis nostrum ullamet corporis suscipit.</p>
+        
+    </div>
+  
+
+    </div>
+  </div>
+  </div>
+  
+</section>
+
+<!--core section-->
+<section id="core">
+  <div class="coresec container">
+
+    <div class="row">
+      <div class="col-12">
+        <h1 class="corehead">Our Core Values</h1>
+      </div>
+      
+      <div class="col-md-6 col-lg-6">
+        <img src="core.jpg" class="coreimg" style="height: 400px;width: 100%;">
+        
+      </div>
+
+      <div class="col-md-6 col-lg-6">
+        <h3 class="coresen">IMPROVING AGRICULTURE, IMPROVING LIVES, CULTIVATING NEW CROPS TO MAKE FARMERS INCREASE PROFIT.</h1>
+        <p class="corepara">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam. Nulla commodo gravida porttitor. Aenean posuere lacus quis leo imperdiet laoreet. Proin vulputate semper odio quam. Nulla commodo gravida porttitor. Aenean posuere lacus quis.</p>
+        <button class="corebtn"><i class="fa fa-spinner fa-spin"></i>Learn More</button>
+        
+      </div>
+
+
+    </div>
+    
+    
+  </div>
+</section>
+
+<!--clean Section-->
+<section class="clean">
+
+  <div class="cleansec container-fluid">
+    <div class="row">
+      <div class="container">
+    
+      <div class="col-md-4">
+        <h2 class="cleantitle">WE ARE INNOVATORS IN AGRICULTURAL BUSINESS. OUR GOAL IS TO BRING HEALTHY ORGANIC FOOD TO EVERY PEOPLE.</h2>
+      </div>
+    
+    <div class="col-md-4">
+        <p class="cleanpara">Integer sit amet mattis quam, sit amet dol ultricies velit. Praesent ullam corper duits turpis dolor sit amet quam. Nulla comodol gravida porttitor. Aenean posuere lacusnt quis leo imperdiet laoreet. Proin vulputat.
+        Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis dolor sit amet quam. Nulla sed commodo gravida porttitor.</p>
+        
+    </div>
+
+    <div class="col-md-4">
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Crop Cultivation</h4>
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Farming Land</h4>
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Harvesting Crops</h4>
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Improving Agriculture</h4>
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Innovators In Agricultural Business</h4>
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Agricultural Robots</h4>
+        <h4 class="cleanhead"><i class="fa fa-tree" aria-hidden="true"></i>Grains And Oil Seeds</h4>
+        
+    </div>
+    
+
+
+      </div>
+    </div>      
+    </div>
+  
+  
+</section>
+
+<!--cards section-->
+
+<section id="services">
+  
+<div class="oursec container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="ourtitle">Our Products and Services</h1>
+      </div>
+      <div class="col-lg-4 col-md-4">
+        <img src="our2.jpg" style="height: 320px;width: 100%;">
+        <h2 class="ourhead">FARMING LAND</h2>
+        <p class="ourpara">Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis sit.</p>
+        <button class="ourbtn">Learn More</button>
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <img src="our1.jpg" style="height: 320px;width: 100%;">
+        <h2 class="ourhead">CULTIVATION </h2>
+        <p class="ourpara">Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis sit.</p>
+        <button class="ourbtn">Learn More</button>
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <img src="our3.jpg" style="height: 320px;width: 100%;">
+        <h2 class="ourhead">HARVESTING  </h2>
+        <p class="ourpara">Integer sit ut amet mattis quam, sit amet ultricies velit. Praesent ullam corper dui turpis sit.</p>
+        <button class="ourbtn">Learn More</button>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+
+<!--plant section-->
+
+<section id="plant">
+  <div class="plantsec container-fluid">
+    <div class="row">
+      <h1 class="planthead">The Best Time To Plant The Tree Is Now.</h1>
+      <p class="plantpara">Sed ut perspiciatis unde omnis natus error dolor volup tatem ed accus antium dolor emque laudantium,<br>totam rem aperiam, eaqu ipsa quae ab illo quasi architi ecto beatae vitae dicta sunt dolor ipsum.</p>
+      <button class="plantbtn1">Our Services</button>
+      <button class="plantbtn2">Contact Us</button>
+      
+    </div>
+    
+  </div>
+  
+</section>
+
+<!--Team Section-->
+<section id="team">
+  <div class="parallax">
+
+  <div class="teamsec container-fluid">
+    
+    <div class="row">
+      <div class="container">
+        <div>
+          <h2 class="teamhead">Meet Our Team</h2>
+        </div>
+  <div class="card col-md-4 col-lg-4">
+  <img src="patil.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Akshay Gotmare</h1>
+  <p class="teamtitle">Worker</p>
+  <p class="teamdes">Agro Harvest</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+
+<div class="card col-md-4 col-lg-4">
+  <img src="yogesh.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Yogesh Khedekar</h1>
+  <p class="teamtitle">Worker</p>
+  <p class="teamdes">Agro Harvest</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+
+<div class="card col-md-4 col-lg-4">
+  <img src="pankaj.jpg" alt="John" style="width:100%;height: 250px;">
+  <h1 class="teamname">Pankaj Amale</h1>
+  <p class="teamtitle">Worker</p>
+  <p class="teamdes">Agro Harvest</p>
+  <div style="margin: 24px 0;">
+    <a href="#" class="ak"><i class="fa fa-dribbble"></i></a> 
+    <a href="#" class="ak"><i class="fa fa-twitter"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-linkedin"></i></a>  
+    <a href="#" class="ak"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <button class="teambtn">Contact</button>
+</div>
+
+    </div>  
+    </div>
+    
+  </div>
+ </div> 
+</section>
+<!--contact section-->
+<section id="contact">
+  <div class="contactsec container-fluid">
+    <div class="container">
+    <div class="row">
+
+      <div class="cont col-12">
+
+    <h2 class="con">Contact Us</h2>
+    <p class="con1">Swing by for a cup of coffee, or leave us a message:</p>
+  
+    </div>
+
+
+      <div class="address col-lg-6 col-md-6">
+
+      <h2 class="contitle"><b>Contact Info</b></h2>
+  
+        <p class="sen">Akshay Santosh Gotmare</p>
+
+          <p class="sen"><i class="fa fa-mobile" aria-hidden="true"></i>
+          +91-9767147832</p>
+
+         <p class="sen"><i class="fa fa-whatsapp" aria-hidden="true"></i> 
+        +91-8459645718</p>
+        
+        <p class="sen"><i class="fa fa-envelope-open" aria-hidden="true"></i>
+        agroharvest@gmail.com</p>
+
+        <p class="sen"><i class="fa fa-map-marker" aria-hidden="true"></i>
+        Akola,Maharashtra, 444001</p>
+
+        <p class="sen"><i class="fa fa-globe" aria-hidden="true"></i>
+        www.agroharvest.in</p>
+        
+      </div>
+
+    <div class="form col-lg-6 col-md-6">
+
+        <form action="#" class="frm">
+    <label for="fname" style="color: #000;">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname" style="color: #000;">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country" style="color: #000;">Country</label>
+    <select id="country" name="country" style="color: #000;">
+      <option value="australia" style="background-color: #000;">India</option>
+      <option value="australia" style="background-color: #000;">Australia</option>
+      <option value="canada" style="background-color: #000;">Canada</option>
+      <option value="usa" style="background-color: #000;">USA</option>
+    </select>
+
+    <label for="subject" style="color: #000;">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+       </div>
+  
+  </div>   
+    </div>
+  </div>
+
+  <div class="theend container-fluid">
+    <div class="row text-center">
+      <div class="col-12">
+        <h4 style="font-family:Athiti;">&copy; Web Creations.All Rights Reserved.<br> Created by Web Creation<br> 2019</h4>
+       </div>
+   </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--srollspy-->
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+
+<!--Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--Bootstrap End-->
+
+</body>
